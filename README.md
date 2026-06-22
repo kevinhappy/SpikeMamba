@@ -121,6 +121,24 @@ Apache License 2.0 — see [LICENSE](LICENSE).
 
 ---
 
+## Acknowledgments
+
+This project builds on the following open-source code:
+
+- **[Mamba](https://github.com/state-spaces/mamba)** — the selective state space
+  model and the `mamba_ssm` package structure that SpikeMamba reformulates into
+  the spike domain (Apache 2.0).
+- **[Medformer](https://github.com/DL4mHealth/Medformer)** — the subject-independent
+  evaluation protocol and biosignal data-loading conventions used in our
+  experiments, and a baseline in our comparisons.
+
+The energy analysis follows the spike-vs-ANN accounting methodology of
+**Spike-Driven Transformer** (Yao et al., NeurIPS 2024 / ICLR 2024); the 45 nm
+CMOS energy constants (E_MAC = 4.6 pJ, E_AC = 0.9 pJ) are taken from
+**Horowitz** (IEEE ISSCC 2014). See the paper for full references.
+
+---
+
 ## Citation
 
 If you use SpikeMamba, please cite:
